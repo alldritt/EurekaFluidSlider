@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SliderView" customModule="EurekaFluidSlider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nal-oe-ckT">
+                    <rect key="frame" x="16" y="5" width="343" height="67"/>
+                    <string key="text">If you know how many calories you ate use the slider below to add them to your daily diary without having to search the specific foods.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-HX-n3C" customClass="Slider" customModule="fluid_slider">
+                    <rect key="frame" x="16" y="82" width="343" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="sU4-Gq-okv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nal-oe-ckT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="5Sn-Ug-4MF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ift-HX-n3C" secondAttribute="trailing" constant="16" id="7Pu-ZC-eSr"/>
+                <constraint firstItem="Ift-HX-n3C" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9m6-5J-Dc8"/>
+                <constraint firstItem="nal-oe-ckT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Jqg-Iz-N60"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ift-HX-n3C" secondAttribute="bottom" constant="10" id="aSW-72-Rct"/>
+                <constraint firstItem="Ift-HX-n3C" firstAttribute="top" secondItem="nal-oe-ckT" secondAttribute="bottom" constant="10" id="hNt-M8-SQa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nal-oe-ckT" secondAttribute="trailing" constant="16" id="tnZ-uo-nbT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="nal-oe-ckT" id="dqe-7J-qN9"/>
+                <outlet property="slider" destination="Ift-HX-n3C" id="HkG-Ex-J2I"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>

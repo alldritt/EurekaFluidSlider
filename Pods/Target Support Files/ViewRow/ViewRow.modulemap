@@ -1,0 +1,6 @@
+framework module ViewRow {
+  umbrella header "ViewRow-umbrella.h"
+
+  export *
+  module * { export * }
+}

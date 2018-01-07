@@ -1,0 +1,6 @@
+framework module fluid_slider {
+  umbrella header "fluid-slider-umbrella.h"
+
+  export *
+  module * { export * }
+}

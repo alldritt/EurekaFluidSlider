@@ -1,0 +1,6 @@
+framework module Pods_EurekaFluidSlider {
+  umbrella header "Pods-EurekaFluidSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}
