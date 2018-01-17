@@ -29,10 +29,6 @@ class ViewController: FormViewController {
                     let nib = UINib(nibName: "SliverView", bundle: bundle)
                     
                     cell.view = nib.instantiate(withOwner: self, options: nil)[0] as? SliderView
-                    cell.contentView.addSubview(cell.view!)
-                    
-                    //  Define the cell's height
-                    cell.height = { return CGFloat(136) }
                 }
             
                 <<< LabelRow() { (row) in
@@ -45,10 +41,6 @@ class ViewController: FormViewController {
                     let nib = UINib(nibName: "SliderWithImagesView", bundle: bundle)
                     
                     cell.view = nib.instantiate(withOwner: self, options: nil)[0] as? SliderWithImagesView
-                    cell.contentView.addSubview(cell.view!)
-                    
-                    //  Define the cell's height
-                    cell.height = { return CGFloat(104) }
                 }
 
                 <<< LabelRow() { (row) in
