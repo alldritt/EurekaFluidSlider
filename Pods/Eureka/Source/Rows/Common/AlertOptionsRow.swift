@@ -1,4 +1,5 @@
-//  RuleRequire.swift
+//
+//  AlertOptionsRow.swift
 //  Eureka ( https://github.com/xmartlabs/Eureka )
 //
 //  Copyright (c) 2016 Xmartlabs SRL ( http://xmartlabs.com )
@@ -24,20 +25,17 @@
 
 import Foundation
 
-public struct RuleRequired<T: Equatable>: RuleType {
 
-    public init(msg: String = "Field required!", id: String? = nil) {
-        self.validationError = ValidationError(msg: msg)
-        self.id = id
+import Foundation
+
+open class AlertOptionsRow<Cell: CellType> : OptionsRow<Cell>, AlertOptionsProviderRow where Cell: BaseCell {
+
+    typealias OptionsProviderType = OptionsProvider<Cell.Value>
+
+    open var cancelTitle: String?
+
+    required public init(tag: String?) {
+        super.init(tag: tag)
     }
 
-    public var id: String?
-    public var validationError: ValidationError
-
-    public func isValid(value: T?) -> ValidationError? {
-        if let str = value as? String {
-            return str.isEmpty ? validationError : nil
-        }
-        return value != nil ? nil : validationError
-    }
 }

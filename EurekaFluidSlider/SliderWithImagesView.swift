@@ -17,7 +17,7 @@ class SliderWithImagesView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        let labelTextAttributes: [NSAttributedStringKey : Any] = [.font: UIFont.systemFont(ofSize: 12, weight: .bold), .foregroundColor: UIColor.white]
+        let labelTextAttributes: [NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 12, weight: .bold), .foregroundColor: UIColor.white]
         sliderWithImages.attributedTextForFraction = { fraction in
             let formatter = NumberFormatter()
             formatter.maximumIntegerDigits = 3
@@ -25,11 +25,11 @@ class SliderWithImagesView: UIView {
             let string = formatter.string(from: (fraction * 800 + 100) as NSNumber) ?? ""
             return NSAttributedString(string: string, attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .bold), .foregroundColor: UIColor.black])
         }
-        sliderWithImages.setMinimumImage(UIImage(named: "ExhaustedMan"))
-        sliderWithImages.setMaximumImage(UIImage(named: "DancingMan"))
+        sliderWithImages.setMinimumImage(UIImage(named: "banana"))
+        sliderWithImages.setMaximumImage(UIImage(named: "cake"))
         sliderWithImages.imagesColor = UIColor.white.withAlphaComponent(0.8)
-        sliderWithImages.setMinimumLabelAttributedText(NSAttributedString(string: "exhausted", attributes: labelTextAttributes))
-        sliderWithImages.setMaximumLabelAttributedText(NSAttributedString(string: "fully rested", attributes: labelTextAttributes))
+        sliderWithImages.setMinimumLabelAttributedText(NSAttributedString(string: "", attributes: labelTextAttributes))
+        sliderWithImages.setMaximumLabelAttributedText(NSAttributedString(string: "", attributes: labelTextAttributes))
         sliderWithImages.fraction = 0.5
         sliderWithImages.shadowOffset = CGSize(width: 0, height: 7)
         sliderWithImages.shadowBlur = 5

@@ -1,6 +1,6 @@
 {
   "name": "ViewRow",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "summary": "A UIView hosting row for use with the Eureka form library",
   "homepage": "https://github.com/EurekaCommunity/ViewRow",
@@ -8,7 +8,7 @@
     "git": "https://github.com/EurekaCommunity/ViewRow.git"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
   "ios": {
     "frameworks": [
