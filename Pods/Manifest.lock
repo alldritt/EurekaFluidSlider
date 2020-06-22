@@ -1,37 +1,29 @@
 PODS:
-  - Eureka (5.0.0)
+  - Eureka (5.2.1)
   - fluid-slider (1.1.0):
     - pop
   - pop (1.0.12)
-  - ViewRow (0.4.0):
-    - Eureka (>= 4.0.0)
+  - ViewRow (0.8):
+    - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
   - Eureka
   - fluid-slider
-  - ViewRow (from `https://github.com/EurekaCommunity/ViewRow`)
+  - ViewRow
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Eureka
     - fluid-slider
     - pop
-
-EXTERNAL SOURCES:
-  ViewRow:
-    :git: https://github.com/EurekaCommunity/ViewRow
-
-CHECKOUT OPTIONS:
-  ViewRow:
-    :commit: fdb0ad7e3ed763fc671f6d68749d3620a242d81d
-    :git: https://github.com/EurekaCommunity/ViewRow
+    - ViewRow
 
 SPEC CHECKSUMS:
-  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  ViewRow: 513d444dcfe53d58f8a6469065329c507c5e4973
+  ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: 75b04ed27585a6a10ac1e18f58f411f764485b1c
+PODFILE CHECKSUM: 7566039d5e62c34fec24b6d976375d448ee5bb29
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

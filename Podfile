@@ -6,5 +6,5 @@ target 'EurekaFluidSlider' do
 
     pod 'Eureka'
     pod 'fluid-slider'
-    pod 'ViewRow', :git => 'https://github.com/EurekaCommunity/ViewRow'
+    pod 'ViewRow'
 end
