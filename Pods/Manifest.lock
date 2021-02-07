@@ -1,5 +1,5 @@
 PODS:
-  - Eureka (5.2.1)
+  - Eureka (5.3.2)
   - fluid-slider (1.1.0):
     - pop
   - pop (1.0.12)
@@ -19,11 +19,11 @@ SPEC REPOS:
     - ViewRow
 
 SPEC CHECKSUMS:
-  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  Eureka: 1c2b8b5892bfb0e972d0fe05f8c09fd89f8625ec
   fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
 PODFILE CHECKSUM: 7566039d5e62c34fec24b6d976375d448ee5bb29
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
